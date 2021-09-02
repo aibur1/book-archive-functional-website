@@ -2,10 +2,6 @@
 
 const spinner = document.getElementById('spinner');
 
-
-
-
-
 const searchBook = () => {
     const searchField = document.getElementById('search-input');
     const searchText = searchField.value;
@@ -13,9 +9,6 @@ const searchBook = () => {
 
     //  clear search
     searchField.value = '';
-   
-    
-   
     // load data
     const url = `https://openlibrary.org/search.json?q=${searchText}`
     spinner.classList.remove("d-none");
@@ -39,7 +32,6 @@ const displayBooks = books => {
         errorDiv.appendChild(p)
     };
 
-    
     books.forEach(book => {
         const div = document.createElement('div');
         div.classList.add('col');
@@ -57,8 +49,6 @@ const displayBooks = books => {
       </div> 
       `
         bookShow.appendChild(div);
-
-        // console.log(book)
     });
 
 };
