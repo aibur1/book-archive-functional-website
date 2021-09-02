@@ -39,7 +39,7 @@ const displayBooks = books => {
         div.innerHTML = `
     
       <div class="card">   
-            <img src="https:covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="...">
+            <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="...">
            <div class="card-body">
                <h2 class="card-title">Book Name :${book.title}</h2>
                <h4 class="card-text">Author : ${book.author_name}</h4>
